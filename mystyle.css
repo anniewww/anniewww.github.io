@@ -112,7 +112,7 @@ a {text-decoration: none;}
 
 .contents{
     width:700px;
-    left:calc(50% - 500px/2 + 155px);
+    left:calc(50% - 500px/2 + 145px);
     font-family: 'Roboto', sans-serif;
     background-color:#ededed;
     margin-top:20px;
