@@ -2,7 +2,7 @@ body{
     background-color: #ededed;
 }
 .topbar {
-    width: 800px;
+    width: 1000px;
     height: 260px;
     background-image:url(new-header.jpg);
     background-size: cover;
@@ -25,7 +25,7 @@ div.header {
     padding: 2px 5px;
     margin-left:auto;
     margin-right:auto;
-    width: 791px;
+    width: 991px;
     border-bottom-left-radius:6px;
     border-bottom-right-radius:6px;
   }
@@ -58,7 +58,7 @@ a {text-decoration: none;}
 
 
   .button1 {
-    margin-left:30%;
+    margin-left:32%;
     margin-right:auto;
     background-color: #2d3130;
     color: #c0c0c0; 
@@ -97,8 +97,8 @@ a {text-decoration: none;}
     color: white;
   }
   .sidebar {
-    width:245px;
-    left:calc(50% - 500px/2 - 150px);
+    width:280px;
+    left:calc(50% - 500px/2 - 245px);
     background-color:#2d3130;
     border:1px solid #2d3130;
     font-family: 'Rubik', sans-serif;
@@ -111,8 +111,8 @@ a {text-decoration: none;}
 }
 
 .contents{
-    width:500px;
-    left:calc(50% - 500px/2 + 150px);
+    width:700px;
+    left:calc(50% - 500px/2 + 155px);
     font-family: 'Roboto', sans-serif;
     background-color:#ededed;
     margin-top:20px;
@@ -125,14 +125,14 @@ a {text-decoration: none;}
 
 
 .post1{
-    width:470px;
+    width:570px;
     padding:10px;
     background-color: #ffffff;
     border-bottom-left-radius:5px;
     border-bottom-right-radius:5px;
 }
 .post2{
-    width:470px;
+    width:570px;
     padding:10px;
     background-color:#ffffff;
     border-bottom-left-radius:5px;
@@ -141,7 +141,7 @@ a {text-decoration: none;}
 
 .dates{
     text-align: center;
-    width:470px;
+    width:570px;
     padding-top:1px;
     padding-bottom:1px;
     padding-left: 10px;
