@@ -11,12 +11,12 @@
     <div class = "topbar">
         <h1>ANNIES WEBSITE<br>under constuction</h1>
     </div>
-    <div class="header">
+    <div class="header" id="myHeader">
         <button onclick="window.location.href='page1.html'" class="button button1">Stream</button>
         <button class="button button2">Weeks</button>
         <button class="button button3">About</button>
     </div>
-
+    <div class="content">
     <div class = "sidebar">
         <h3>Navigation</h3>
         <p>pages</p>
@@ -26,7 +26,7 @@
     
     <div class=dates><p>Week 2</p></div>
     <div class = "post2">
-    <p>Introduction to html</p>
+    <p>Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. Introduction to html. </p>
     </div>
     
     <div class=dates><p>Week 1</p></div>
@@ -39,6 +39,22 @@
         </p>
         </div>
 </div>
+</div>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
 
 </body>
 </html>
