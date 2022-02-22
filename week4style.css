@@ -1,0 +1,125 @@
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:50px; top:60px;}
+    50%  {left:100px; top:0px;}
+    75%  {left:50px; top:-40px;}
+    100% {left:0px; top:0px;}
+  }
+.face{ 
+    position:absolute;
+    margin-left:500px;
+    margin-top:40px;
+    left: auto;
+    right: auto;
+    height:500px;
+    width:500px;
+    background-color:#ff6bc1;
+    border-radius: 20%;
+
+    display: inline-block;
+
+}
+
+.triangle {
+    border-color: transparent transparent red transparent;
+    border-style: solid;
+    border-width: 40px 60px 100px 60px;
+    margin-left:150px;
+    height: 0px;
+    width: 0px;
+}
+
+.nostril1 {
+    position:relative;
+    margin-top: -70px;
+    border-color: transparent transparent black transparent;
+    border-style: solid;
+    border-width: 40px 20px 30px 20px;
+    margin-left:160px;
+    height: 0px;
+    width: 0px;
+}
+
+.nostril2 {
+    position:relative;
+    margin-top: -70px;
+    border-color: transparent transparent black transparent;
+    border-style: solid;
+    border-width: 40px 20px 30px 20px;
+    margin-left:220px;
+    height: 0px;
+    width: 0px;
+}
+
+.eye1{
+    position:relative;
+    margin-left:10px;
+    margin-top:40px;
+    left: auto;
+    right: auto;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+.brown1{
+
+    margin-top:40px;
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 2;
+
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+.eye2{
+    position:relative;
+    margin-left:100px;
+    margin-top:40px;
+    left: auto;
+    right: auto;
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+.brown2{
+    margin-top:40px;
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 2;
+
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+}
+
+.smile{
+    transform: scale(2.5);
+    height:100px;
+    margin-left:100px;
+    z-index: 3;
+}
+
+.hair{
+    position:absolute;
+    transform: scaleY(7);
+    transform: scaleX(2);
+    margin-left:400px;
+    margin-top: -20px;;
+    z-index: -1;
+}
