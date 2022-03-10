@@ -1,0 +1,338 @@
+body{
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    color:white;
+    background-color:black;
+}
+
+h1{
+    font-size: 150px;
+    margin: 0
+}
+
+.flex-grid {
+    display: flex;
+    padding: 0 55px;
+  }
+
+.col {
+    flex: auto;
+    margin-bottom: 5px;
+  }
+
+
+.resize{
+    height: 400px;
+    width: 550px;
+}
+
+.resize-2{
+    height: 200px;
+    width: 350px;
+}
+
+#next{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#back{
+    margin-bottom: 1px;
+    margin-left: 1px;
+    position: absolute;
+    bottom: 0;
+}
+
+a:link {
+    text-decoration: none
+}
+
+a:visited {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none;
+    color: grey
+}
+
+a:active { text-decoration: none; }
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+p{
+    font-size: 36px;
+}
+
+
+  /* ANNIES ADDED CSS*/
+
+  #Page1{
+    background-image: url("media/pixel.png");
+    background-size: cover;
+    background-color: black;
+}
+#Page3{
+  background-image: url("media/google_bg.jpg");
+  background-size: cover;
+  background-color: black;
+  background-position: center;
+}
+#Page4{
+  background-image: url("media/censor_bg.png");
+  background-position: center;
+}
+.topheading{
+    border:none;
+    width: 1000px;
+    height: 500px;
+    background-image:url("media/world.png");
+    background-size: cover;
+    image-resolution: scale(30%);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color:#2d3130;
+    top:0px;
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom-left-radius:10px;
+    border-top-left-radius:800px;
+    border-top-right-radius:800px;
+}
+.title{
+    
+    background-color: black;
+    border-radius:100px;
+    opacity: 0.8;
+    color:white;
+    height: 100px;
+    width: 500px;
+    margin-top: 180px;
+    margin-left: 240px;
+    height: auto;
+    padding: 2vh;
+    font-family: 'Staatliches', cursive;
+    font-size:10px;
+    position:absolute;
+    z-index:3;
+}
+.titlefont{
+  font-size:80px;
+}
+.names{
+    text-align: center;
+    background-color: white;
+    border-radius:10px;
+    opacity: 0.6;
+    color:black;
+    height: 100px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 150px;
+    height: auto;
+    padding: .1vh;
+    font-family: 'Staatliches', cursive;
+    font-size:5px;
+    position:absolute;
+    z-index:3;
+}
+
+.namefont{
+  font-size:30px;
+}
+
+.navbar {
+        width:280px;
+        left:calc(50% - 500px/2 - 245px);
+        background-color:#2d3130;
+        border:1px solid #2d3130;
+        font-family: 'Rubik', sans-serif;
+        color:#f0f0f0;
+        position:absolute;
+        margin-top:50px;
+        border-radius:5px;
+        padding:8px;
+        text-align: left;
+}
+.page1content{
+    width:1000px;
+    height: 500px;
+    margin-top: auto;
+    position: relative;
+    font-family: 'Staatliches', cursive;
+    background-color:#ededed;
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom-left-radius:900px;
+    border-bottom-right-radius:900px;
+}
+.content3{
+  display: flex;
+  justify-content: center;
+  margin-left: 25vmax;
+  margin-top: -250px;
+  border-radius: 30px;
+  width: 800px;
+  flex-direction: column;
+  padding:40px;
+  background-color: black;
+}
+
+.about1{
+  color:black;
+  margin-top: -20px;;
+  margin-left: 200px;
+  padding-top:10px;
+  width:600px;
+  text-align: center;
+  font-size: 40px;
+}
+.about2{
+  color:black;
+  margin-top: -20px;;
+  margin-left: 200px;
+  padding-top:10px;
+  width:600px;
+  text-align: center;
+  font-size: 10px;
+}
+.button { 
+    text-align: center;   
+    width: 200px;
+    height:100px;
+    border-radius: 10px;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+
+    border: none;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 15px;
+
+    margin-top:-1px;
+    margin-left: 0px;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+  }
+  
+a {text-decoration: none;}
+
+
+  .button1 {
+    border: none;
+    background-color: #2d3130;
+    color: white; 
+    border-bottom: 2px solid #2d3130;
+    font-size: 30px;
+
+  }
+  
+  .button1:hover {
+    border: none;
+    background-color: #e17e66;
+    color: white;
+    font-size: 30px;
+
+  }
+.Page3Head{
+  font-size: 130px;
+  color: black;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+}
+.Page5Head{
+  font-size: 90px;
+  color: black;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+}
+  .NavPage3 {
+        position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width:180px;
+    margin-left: 120px;
+    margin-top: 110px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding:3px;
+    background-color: #38a865;
+  }
+
+  .Navname3{
+    font-family: 'Space Mono', monospace;
+  }
+  
+  .page4button {
+    border: #38a865;
+    width:180px;
+    padding:15px;
+    background-color: #2d3130;
+    color: white; 
+    border-bottom: 2px solid #2d3130;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+  }
+  .page4button4 {
+    width:180px;
+    border: none;
+    padding:20px;
+    background-color: blue;
+    color: white; 
+    border-bottom: 2px solid #2d3130;
+    flex-direction: column;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+  }
+  
+  .page4button:hover, .page4button4:hover {
+    border: none;
+    background-color: purple;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    font-size: 20px;
+  }
+
+  .vid1{
+    margin-top: 0px;
+    position: relative;
+  }
+  .p3{
+    width:800px;
+    font-size: 20px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .p4{
+    width:700px;
+    font-size: 20px;
+    margin-left: 120px;
+    text-align: left;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .p31{
+    font-size: 30px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+  }
+  .atlas_c{
+    width:700px;
+  }
+  .google_c{
+    width:700px;
+  }
+  .a_p, .g_p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+  }
