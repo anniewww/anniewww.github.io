@@ -1,0 +1,77 @@
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position:cover;
+    background-repeat: no-repeat;
+}
+.text0{
+    position: absolute;
+    text-align: center;
+    color:red;
+    font-size: 100px;
+    top: -100px;
+    margin-left: 20px;;
+    z-index: 3;
+}
+.shadow{
+    position: absolute;
+    width: 800px;
+    height: 1100px;
+    top: -200px;
+   left: 400px;
+   z-index: 2;
+
+}
+.reveal{
+    position: absolute;
+    width: 800px;
+    height: 1100px;
+    top: -200px;
+   left: 400px;
+   z-index: 1;
+
+}
+.shadow:hover{
+    opacity: 0%;
+    transition: 0.3s;
+}
+
+.text1, .text3, .text5{
+    margin-top: 100px;
+    font-size: 40px;
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.text2, .text4, .text6{
+    font-size: 40px;
+    animation-duration: 6s;
+    animation-name: slidein2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 90%;
+      width: 200%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  @keyframes slidein2 {
+    from {
+      margin-left: 0%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 50%;
+      width: 100%;
+    }
+  }
