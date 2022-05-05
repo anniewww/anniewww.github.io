@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mii_style.css">
+
+
+</head>
+<body>
+  <h1>BUILD AN AVATAR</h1>
+<h3 style="color:yellow; text-align: center;">CLOSE ALL YELLOW TABS BEFORE SELECTING ANOTHER</h3>
+<audio id="myAudio">
+  <source src="music.ogg" type="audio/ogg">
+  <source src="music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p style="text-align: center;">Click for ambient music</p>
+
+<button onclick="playAudio()" type="button" style="margin-left: 670px;">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
+
+    <!--the flavor block*/--> 
+<div class="head">
+    <div id="face1">
+    <img class="imagef"src="images/face1.png" style="width:500px;height:500px; margin-left:500px; margin-right:auto; position:absolute; margin-top: 50px; display:block;">
+</div>
+<div id="face2">
+    <img class="imagef"src="images/face2.png" style="width:500px;height:500px; margin-left:500px; margin-right:auto; position:absolute; margin-top: 50px; display:block;">
+</div>
+<div id="face3">
+    <img class="imagef"src="images/face3.png" style="width:500px;height:500px; margin-left:500px; margin-right:auto; position:absolute; margin-top: 50px; display:block;">
+</div>
+<div id="face4">
+    <img class="imagef"src="images/face4.png" style="width:500px;height:500px; margin-left:500px; margin-right:auto; position:absolute; margin-top: 50px; display:block;">
+</div>
+<div id="hair1">
+    <img class="imagef"src="images/hair1.png" style="width:350px;height:350px; margin-left:560px; margin-right:auto; position:absolute; margin-top: -30px; display:block;">
+</div>
+<div id="hair2">
+    <img class="imagef"src="images/hair2.png" style="width:350px;height:350px; margin-left:560px; margin-right:auto; position:absolute; margin-top: -30px; display:block;">
+</div>
+<div id="hair3">
+    <img class="imagef"src="images/hair3.png" style="width:350px;height:350px; margin-left:560px; margin-right:auto; position:absolute; margin-top: -30px; display:block;">
+</div>
+<div id="eyes1">
+    <img class="imagef"src="images/eyes1.png" style="width:150px;height:150px; margin-left:670px; margin-right:auto; position:absolute; margin-top: 50px; display:block;">
+</div>
+<div id="eyes2">
+    <img class="imagef"src="images/eyes2.png" style="width:150px;height:150px; margin-left:670px; margin-right:auto; position:absolute; margin-top: 50px; display:block;">
+</div>
+<div id="eyes3">
+    <img class="imagef"src="images/eyes3.png" style="width:150px;height:150px; margin-left:670px; margin-right:auto; position:absolute; margin-top: 50px; display:block;">
+</div>
+<div id="nose1">
+    <img class="imagef"src="images/nose1.png" style="width:150px;height:150px; margin-left:670px; margin-right:auto; position:absolute; margin-top: 60px; display:block;">
+</div>
+<div id="nose2">
+    <img class="imagef"src="images/nose2.png" style="width:150px;height:150px; margin-left:680px; margin-right:auto; position:absolute; margin-top: 60px; display:block;">
+</div>
+
+<div id="nose3">
+    <img class="imagef"src="images/nose3.png" style="width:150px;height:150px; margin-left:670px; margin-right:auto; position:absolute; margin-top: 60px; display:block;">
+</div>
+<div id="mouth1">
+    <img class="imagef"src="images/mouth1.png" style="width:100px;height:100px; margin-left:690px; margin-right:auto; position:absolute; margin-top: 110px;display:block;">
+</div>
+<div id="mouth2">
+    <img class="imagef"src="images/mouth2.png" style="width:150px;height:150px; margin-left:670px; margin-right:auto; position:absolute; margin-top: 70px;display:block;">
+</div>
+<div id="mouth3">
+    <img class="imagef"src="images/mouth3.png" style="width:150px;height:150px; margin-left:670px; margin-right:auto; position:absolute; margin-top: 90px;display:block;">
+</div>
+
+</div>
+
+<div class="container">
+  <p class="text1">go random</p>
+<p class="text2">be creative</p>
+<p class="text3">you can have 6 eyes</p>
+<p class="text4">your dream self?</p>
+<p class="text5">it's body positivity</p>
+<p class="text6">yes to diversity</p>
+    
+<div class="flavors"><h3>FACE</h3></div>
+<div class="content" style="z-index:0">
+  <button onclick="f1()" class="buttonf1"></button>
+  <button onclick="f2()" class="buttonf2"></button>
+  <button onclick="f3()" class="buttonf3"></button>
+  <button onclick="f4()" class="buttonf4"></button>
+</div>
+
+<div class="topings"><h3>HAIR</h3></div>
+<div class="content2">
+  <button onclick="h1()"class="buttonh1"></button>
+  <button onclick="h2()"class="buttonh2"></button>
+  <button onclick="h3()"class="buttonh3"></button>
+</div>
+</div>
+
+<div class="eye_top"><h3>EYES</h3></div>
+<div class="content3" st>
+  <button onclick="e1()"class="buttone1">bored</button>
+  <button onclick="e2()"class="buttone2">alert</button>
+  <button onclick="e3()"class="buttone3">deadpan</button>
+</div>
+</div>
+
+<div class="nose_top"><h3>NOSE</h3></div>
+<div class="content4">
+  <button onclick="n1()"class="buttonn1">long</button>
+  <button onclick="n2()"class="buttonn2">sharp</button>
+  <button onclick="n3()"class="buttonn3">small</button>
+</div>
+</div>
+
+<div class="mouth_top"><h3>MOUTH</h3></div>
+<div class="content5">
+  <button onclick="m1()"class="buttonm1">normal</button>
+  <button onclick="m2()"class="buttonm2">insane</button>
+  <button onclick="m3()"class="buttonm3">crisis</button>
+</div>
+</div>
+
+
+<script>
+document.getElementById("face1").style.display= "block";
+document.getElementById("face2").style.display= "none";
+document.getElementById("face3").style.display= "none";
+document.getElementById("face4").style.display= "none";
+document.getElementById("hair1").style.display= "none";
+document.getElementById("hair2").style.display= "none";
+document.getElementById("hair3").style.display= "none";
+document.getElementById("eyes1").style.display= "none";
+document.getElementById("eyes2").style.display= "none";
+document.getElementById("eyes3").style.display= "none";
+document.getElementById("nose1").style.display= "none";
+document.getElementById("nose2").style.display= "none";
+document.getElementById("nose3").style.display= "none";
+document.getElementById("mouth1").style.display= "none";
+document.getElementById("mouth2").style.display= "none";
+document.getElementById("mouth3").style.display= "none";
+
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+
+function f1() {
+  var x = document.getElementById("face1");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+    
+  }
+
+}
+function f2() {
+  var x = document.getElementById("face2");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+    
+  }
+
+}
+function f3() {
+  var x = document.getElementById("face3");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+    x.style.opacity="1";
+  } else {
+    x.style.display = "none";
+  }
+}
+function f4() {
+  var x = document.getElementById("face4");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+    x.style.opacity="1";
+  } else {
+    x.style.display = "none";
+  }
+}
+function h1() {
+  var x = document.getElementById("hair1");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function h2() {
+  var x = document.getElementById("hair2");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function h3() {
+  var x = document.getElementById("hair3");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function e1() {
+  var x = document.getElementById("eyes1");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function e2() {
+  var x = document.getElementById("eyes2");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function e3() {
+  var x = document.getElementById("eyes3");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function n1() {
+  var x = document.getElementById("nose1");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function n2() {
+  var x = document.getElementById("nose2");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function n3() {
+  var x = document.getElementById("nose3");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function m1() {
+  var x = document.getElementById("mouth1");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function m2() {
+  var x = document.getElementById("mouth2");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function m3() {
+  var x = document.getElementById("mouth3");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+var face = document.getElementsByClassName("buttonf1");
+var coll = document.getElementsByClassName("flavors");
+var i;
+
+
+for (i = 0; i < coll.length; i++) {
+coll[i].addEventListener("click", function() {
+
+
+  this.classList.toggle("active");
+
+
+
+  
+  var content = this.nextElementSibling;
+
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+    
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+  }
+  });
+
+}
+
+var coll2 = document.getElementsByClassName("topings");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll2[i].addEventListener("click", function() { 
+
+
+  this.classList.toggle("active");
+
+
+
+
+  var content2 = this.nextElementSibling;
+  if (content2.style.maxHeight){
+    content2.style.maxHeight = null;
+  } else {
+    content2.style.maxHeight = content2.scrollHeight + "px";
+  } 
+});
+}
+
+var coll3 = document.getElementsByClassName("eye_top");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll3[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var content3 = this.nextElementSibling;
+  if (content3.style.maxHeight){
+    content3.style.maxHeight = null;
+  } else {
+    content3.style.maxHeight = content3.scrollHeight + "px";
+  } 
+});
+}
+var coll4 = document.getElementsByClassName("nose_top");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll4[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var content4 = this.nextElementSibling;
+  if (content4.style.maxHeight){
+    content4.style.maxHeight = null;
+  } else {
+    content4.style.maxHeight = content4.scrollHeight + "px";
+  } 
+});
+}
+var coll5 = document.getElementsByClassName("mouth_top");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+coll5[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var content5 = this.nextElementSibling;
+  if (content5.style.maxHeight){
+    content5.style.maxHeight = null;
+  } else {
+    content5.style.maxHeight = content5.scrollHeight + "px";
+  } 
+});
+}
+
+function show() {
+ 
+ /* Access image by id and change
+ the display property to block*/
+ document.getElementById('image')
+         .style.display = "block";
+
+ document.getElementById('btnID')
+         .style.display = "none";
+}
+
+  </script>
+</body>  
+</html>
+
+ 
