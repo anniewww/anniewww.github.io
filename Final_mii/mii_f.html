@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="mii_f.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="mii_f.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Space+Mono&display=swap" rel="stylesheet">
+
+    <!--This is where the image appears-->
+    <!--I was trying out to do it this way... didn't work-->
+    <!--<div id="types" value="face1">-->
+        <div class="header">
+        <img src="images/head.gif" style="width:75%">
+    </div>
+    <p class="text0">How to play:</p>
+    <p class="text1">Choose the tab to select a feature type and then pick one to select the feature onto you character. There are no limits!</p>
+    
+    <audio id="myAudio">
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      
+      
+      <div id="buttonsA">
+     <p id="window" style="text-align: center;">ambient music</p></p>
+      <button onclick="playAudio()" type="button" style="background-color: #4CAF50;">▶️</button>
+      <button onclick="pauseAudio()" type="button" style="background-color: #d62828;">⏸︎</button>
+    </div>
+
+    <audio id="magic">
+        <source src="magic.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <h3 id="randoming"onclick="randomize(); playMagic()";>RANDOMIZE ME</h3>
+
+    <audio id="sad">
+        <source src="sad.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    <h3 id="resetting"onclick="reset(); playSad()";>RESET ME</h3>
+
+    <div id="border">
+    <div id="face1">
+        <img class="images"src="images/face1.png" style="display: block;">
+    </div>
+    <div id="face2">
+        <img class="images"src="images/face2.png" style="display: block;">
+    </div>
+    <div id="face3">
+        <img class="images"src="images/face3.png" style="display: block;">
+    </div>
+    <div id="face4">
+        <img class="images"src="images/face4.png" style="display: block;">
+    </div>
+    <div id="face5">
+        <img class="images"src="images/face5.png" style="display: block;">
+    </div>
+    <div id="face6">
+        <img class="images"src="images/face6.png" style="display: block;">
+    </div>
+    <div id="face7">
+        <img class="images"src="images/face7.png" style="display: block;">
+    </div>
+    <div id="face8">
+        <img class="images"src="images/face8.png" style="display: block;">
+    </div>  
+    <div id="hair1">
+        <img class="images"src="images/hair1.png" style="display: block;">
+    </div>
+    <div id="hair2">
+        <img class="images"src="images/hair2.png" style="display: block;">
+    </div>
+    <div id="hair3">
+        <img class="images"src="images/hair3.png" style="display: block;">
+    </div>   
+    <div id="hair4">
+        <img class="images"src="images/hair4.png" style="display: block;">
+    </div>
+    <div id="hair5">
+        <img class="images"src="images/hair5.png" style="display: block;">
+    </div>
+    <div id="hair6">
+        <img class="images"src="images/hair6.png" style="display: block;">
+    </div>
+    <div id="hair7">
+        <img class="images"src="images/hair7.png" style="display: block;">
+    </div>
+    <div id="hair8">
+        <img class="images"src="images/hair8.png" style="display: block;">
+    </div>
+    <div id="eyes1">
+        <img class="images"src="images/eyes1.png" style="display: block;">
+    </div>
+    <div id="eyes2">
+        <img class="images"src="images/eyes2.png" style="display: block;">
+    </div>
+    <div id="eyes3">
+        <img class="images"src="images/eyes3.png" style="display: block;">
+    </div>
+    <div id="eyes4">
+        <img class="images"src="images/eyes4.png" style="display: block;">
+    </div>
+    <div id="eyes5">
+        <img class="images"src="images/eyes5.png" style="display: block;">
+    </div>
+    <div id="eyes6">
+        <img class="images"src="images/eyes6.png" style="display: block;">
+    </div>
+    <div id="eyes7">
+        <img class="images"src="images/eyes7.png" style="display: block;">
+    </div>
+    <div id="eyes8">
+        <img class="images"src="images/eyes8.png" style="display: block;">
+    </div>
+    <div id="nose1">
+        <img class="images"src="images/nose1.png" style="display: block;">
+    </div>
+    <div id="nose2">
+        <img class="images"src="images/nose2.png" style="display: block;">
+    </div>
+    <div id="nose3">
+        <img class="images"src="images/nose3.png" style="display: block;">
+    </div>
+    <div id="nose4">
+        <img class="images"src="images/nose4.png" style="display: block;">
+    </div>
+    <div id="nose5">
+        <img class="images"src="images/nose5.png" style="display: block;">
+    </div>
+    <div id="nose6">
+        <img class="images"src="images/nose6.png" style="display: block;">
+    </div>
+    <div id="nose7">
+        <img class="images"src="images/nose7.png" style="display: block;">
+    </div>
+    <div id="nose8">
+        <img class="images"src="images/nose8.png" style="display: block;">
+    </div>
+    <div id="mouth1">
+        <img class="images"src="images/mouth1.png" style="display: block;">
+    </div>
+    <div id="mouth2">
+        <img class="images"src="images/mouth2.png" style="display: block;">
+    </div>
+    <div id="mouth3">
+        <img class="images"src="images/mouth3.png" style="display: block;">
+    </div>
+    <div id="mouth4">
+        <img class="images"src="images/mouth4.png" style="display: block;">
+    </div>
+    <div id="mouth5">
+        <img class="images"src="images/mouth5.png" style="display: block;">
+    </div>
+    <div id="mouth6">
+        <img class="images"src="images/mouth6.png" style="display: block;">
+    </div>
+    <div id="mouth7">
+        <img class="images"src="images/mouth7.png" style="display: block;">
+    </div>
+    <div id="mouth8">
+        <img class="images"src="images/mouth8.png" style="display: block;">
+    </div>
+</div>
+    <!--for some reason initializing display works this way-->
+    <script>
+
+document.getElementById("face1").style.display= "block";
+document.getElementById("face2").style.display= "none";
+document.getElementById("face3").style.display= "none";
+document.getElementById("face4").style.display= "none";
+document.getElementById("face5").style.display= "none";
+document.getElementById("face6").style.display= "none";
+document.getElementById("face7").style.display= "none";
+document.getElementById("face8").style.display= "none";
+
+document.getElementById("hair1").style.display= "none";
+document.getElementById("hair2").style.display= "none";
+document.getElementById("hair3").style.display= "none";
+document.getElementById("hair4").style.display= "none";
+document.getElementById("hair5").style.display= "none";
+document.getElementById("hair6").style.display= "none";
+document.getElementById("hair7").style.display= "none";
+document.getElementById("hair8").style.display= "none";
+
+document.getElementById("eyes1").style.display= "none";
+document.getElementById("eyes2").style.display= "none";
+document.getElementById("eyes3").style.display= "none";
+document.getElementById("eyes4").style.display= "none";
+document.getElementById("eyes5").style.display= "none";
+document.getElementById("eyes6").style.display= "none";
+document.getElementById("eyes7").style.display= "none";
+document.getElementById("eyes8").style.display= "none";
+
+document.getElementById("nose1").style.display= "none";
+document.getElementById("nose2").style.display= "none";
+document.getElementById("nose3").style.display= "none";
+document.getElementById("nose4").style.display= "none";
+document.getElementById("nose5").style.display= "none";
+document.getElementById("nose6").style.display= "none";
+document.getElementById("nose7").style.display= "none";
+document.getElementById("nose8").style.display= "none";
+
+document.getElementById("mouth1").style.display= "none";
+document.getElementById("mouth2").style.display= "none";
+document.getElementById("mouth3").style.display= "none";
+document.getElementById("mouth4").style.display= "none";
+document.getElementById("mouth5").style.display= "none";
+document.getElementById("mouth6").style.display= "none";
+document.getElementById("mouth7").style.display= "none";
+document.getElementById("mouth8").style.display= "none";
+
+//music
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+  
+} 
+//randomize 
+    const faceA=["face1","face2","face3","face4","face5","face6","face7","face8"]
+    const hairA=["hair1","hair2","hair3","hair4","hair5","hair6","hair7","hair8"]
+    const eyesA=["eyes1","eyes2","eyes3","eyes4","eyes5","eyes6","eyes7","eyes8"]
+    const noseA=["nose1","nose2","nose3","nose4","nose5","nose6","nose7","nose8"]
+    const mouthA=["mouth1","mouth2","mouth3","mouth4","mouth5","mouth6","mouth7","mouth8"]
+    const reset0=["none","none","none","none","none","none","none","none"];
+function randomize(){
+    const random1=["none","none","none","none","none","none","none","none"];
+    const random2=["none","none","none","none","none","none","none","none"];
+    const random3=["none","none","none","none","none","none","none","none"];
+    const random4=["none","none","none","none","none","none","none","none"];
+    const random5=["none","none","none","none","none","none","none","none"];
+
+    let num1=Math.floor(Math.random() * 8 + 0);
+    random1[num1]="block";
+    let num2=Math.floor(Math.random() * 8 + 0);
+    random2[num2]="block";
+    let num3=Math.floor(Math.random() * 8 + 0);
+    random3[num3]="block";
+    let num4=Math.floor(Math.random() * 8 + 0);
+    random4[num4]="block";
+    let num5=Math.floor(Math.random() * 8 + 0);
+    random5[num5]="block";
+
+    for(i=0; i<faceA.length;i++){
+        document.getElementById(faceA[i]).style.display= random1[i];
+    }
+    for(i=0; i<hairA.length;i++){
+        document.getElementById(hairA[i]).style.display= random2[i];
+    }
+    for(i=0; i<eyesA.length;i++){
+        document.getElementById(eyesA[i]).style.display= random3[i];
+    }
+    for(i=0; i<noseA.length;i++){
+        document.getElementById(noseA[i]).style.display= random4[i];
+    }
+    for(i=0; i<mouthA.length;i++){
+        document.getElementById(mouthA[i]).style.display= random5[i];
+    }
+    
+}
+var m = document.getElementById("magic"); 
+
+function playMagic() { 
+  m.play(); 
+}
+
+function reset(){
+    for(i=0; i<faceA.length;i++){
+        document.getElementById(faceA[i]).style.display= reset0[i];
+    }
+    for(i=0; i<hairA.length;i++){
+        document.getElementById(hairA[i]).style.display= reset0[i];
+    }
+    for(i=0; i<eyesA.length;i++){
+        document.getElementById(eyesA[i]).style.display= reset0[i];
+    }
+    for(i=0; i<noseA.length;i++){
+        document.getElementById(noseA[i]).style.display= reset0[i];
+    }
+    for(i=0; i<mouthA.length;i++){
+        document.getElementById(mouthA[i]).style.display= reset0[i];
+    }
+    
+}
+var s = document.getElementById("sad"); 
+
+function playSad() { 
+  s.play(); 
+}
+
+    </script>
+
+
+    <div class="row">
+        <div class="column" onclick="openTab('b1');" style="color:white; background-color:#eae2b7; border-top-left-radius: 15px;">
+          Body
+        </div>
+        <div class="column" onclick="openTab('b2');" style="color:white; background-color:#fcbf49">
+          Hair
+        </div>
+        <div class="column" onclick="openTab('b3');" style="color:white;background-color:#f77f00;">
+            Eyes
+          </div>
+        <div class="column" onclick="openTab('b4');" style="color: white;background-color:#d62828;">
+            Nose
+        </div>
+        <div class="column" onclick="openTab('b5');" style="color:white; background-color:#820023; border-top-right-radius: 15px;">
+           Mouth
+        </div>
+</div>
+
+      </div>
+    
+      <div id="b1" class="containerTab" style="display:none;background:#eae2b7; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div class="wrapper">
+            <div id = "iconF1" class="grid-item" style=" background-image: url('images/face1_icon.png');" onclick="f1('face1')"></div>
+            <div id = "iconF2" class="grid-item" style=" background-image: url('images/face2_icon.png');" onclick="f2('face2')"></div>
+            <div id = "iconF3" class="grid-item" style=" background-image: url('images/face3_icon.png');" onclick="f3('face3')"></div>
+            <div id = "iconF4" class="grid-item" style=" background-image: url('images/face4_icon.png');" onclick="f4('face4')"></div>
+            <div id = "iconF5" class="grid-item" style=" background-image: url('images/face5_icon.png');" onclick="f5('face5')"></div>
+            <div id = "iconF6" class="grid-item" style=" background-image: url('images/face6_icon.png');" onclick="f6('face6')"></div>
+            <div id = "iconF7" class="grid-item" style=" background-image: url('images/face7_icon.png');" onclick="f7('face7')"></div>
+            <div id = "iconF8" class="grid-item" style=" background-image: url('images/face8_icon.png');" onclick="f8('face8')"></div>
+         </div>
+      </div>
+      
+      <div id="b2" class="containerTab" style="display:none;background:#fcbf49; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div class="wrapper">
+            <div id = "iconH1" class="grid-item" style=" background-image: url('images/hair1_icon.png');" onclick="h1('hair1')"></div>
+            <div id = "iconH2" class="grid-item" style=" background-image: url('images/hair2_icon.png');" onclick="h2('hair2')"></div>
+            <div id = "iconH3" class="grid-item" style=" background-image: url('images/hair3_icon.png');" onclick="h3('hair3')"></div>
+            <div id = "iconH4" class="grid-item" style=" background-image: url('images/hair4_icon.png');" onclick="h4('hair4')"></div>
+            <div id = "iconH5" class="grid-item" style=" background-image: url('images/hair5_icon.png');" onclick="h5('hair5')"></div>
+            <div id = "iconH6" class="grid-item" style=" background-image: url('images/hair6_icon.png');" onclick="h6('hair6')"></div>
+            <div id = "iconH7" class="grid-item" style=" background-image: url('images/hair7_icon.png');" onclick="h7('hair7')"></div>
+            <div id = "iconH8" class="grid-item" style=" background-image: url('images/hair8_icon.png');" onclick="h8('hair8')"></div>
+        </div>
+      </div>
+      
+      <div id="b3" class="containerTab" style="display:none;background:#f77f00; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div class="wrapper">
+            <div id = "iconE1" class="grid-item" style=" background-image: url('images/eyes1_icon.png');" onclick="e1('eyes1')"></div>
+            <div id = "iconE2" class="grid-item" style=" background-image: url('images/eyes2_icon.png');" onclick="e2('eyes2')"></div>
+            <div id = "iconE3" class="grid-item" style=" background-image: url('images/eyes3_icon.png');" onclick="e3('eyes3')"></div>
+            <div id = "iconE4" class="grid-item" style=" background-image: url('images/eyes4_icon.png');" onclick="e4('eyes4')"></div>
+            <div id = "iconE5" class="grid-item" style=" background-image: url('images/eyes5_icon.png');" onclick="e5('eyes5')"></div>
+            <div id = "iconE6" class="grid-item" style=" background-image: url('images/eyes6_icon.png');" onclick="e6('eyes6')"></div>
+            <div id = "iconE7" class="grid-item" style=" background-image: url('images/eyes7_icon.png');" onclick="e7('eyes7')"></div>
+            <div id = "iconE8" class="grid-item" style=" background-image: url('images/eyes8_icon.png');" onclick="e8('eyes8')"></div>
+        </div>
+      </div>
+      
+      <div id="b4" class="containerTab" style="display:none;background:#d62828; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div class="wrapper">
+            <div id = "iconN1" class="grid-item" style=" background-image: url('images/nose1_icon.png');" onclick="n1('nose1')"></div>
+            <div id = "iconN2" class="grid-item" style=" background-image: url('images/nose2_icon.png');" onclick="n2('nose2')"></div>
+            <div id = "iconN3" class="grid-item" style=" background-image: url('images/nose3_icon.png');" onclick="n3('nose3')"></div>
+            <div id = "iconN4" class="grid-item" style=" background-image: url('images/nose4_icon.png');" onclick="n4('nose4')"></div>
+            <div id = "iconN5" class="grid-item" style=" background-image: url('images/nose5_icon.png');" onclick="n5('nose5')"></div>
+            <div id = "iconN6" class="grid-item" style=" background-image: url('images/nose6_icon.png');" onclick="n6('nose6')"></div>
+            <div id = "iconN7" class="grid-item" style=" background-image: url('images/nose7_icon.png');" onclick="n7('nose7')"></div>
+            <div id = "iconN8" class="grid-item" style=" background-image: url('images/nose8_icon.png');" onclick="n8('nose8')"></div>
+        </div>
+      </div>
+      
+      <div id="b5" class="containerTab" style="display:none;background:#820023; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <div class="wrapper">
+            <div id = "iconM1" class="grid-item" style=" background-image: url('images/mouth1_icon.png');" onclick="m1('mouth1')"></div>
+            <div id = "iconM2" class="grid-item" style=" background-image: url('images/mouth2_icon.png');" onclick="m2('mouth2')"></div>
+            <div id = "iconM3" class="grid-item" style=" background-image: url('images/mouth3_icon.png');" onclick="m3('mouth3')"></div>
+            <div id = "iconM4" class="grid-item" style=" background-image: url('images/mouth4_icon.png');" onclick="m4('mouth4')"></div>
+            <div id = "iconM5" class="grid-item" style=" background-image: url('images/mouth5_icon.png');" onclick="m5('mouth5')"></div>
+            <div id = "iconM6" class="grid-item" style=" background-image: url('images/mouth6_icon.png');" onclick="m6('mouth6')"></div>
+            <div id = "iconM7" class="grid-item" style=" background-image: url('images/mouth7_icon.png');" onclick="m7('mouth7')"></div>
+            <div id = "iconM8" class="grid-item" style=" background-image: url('images/mouth8_icon.png');" onclick="m8('mouth8')"></div>
+        </div>
+      </div>
+ </html>

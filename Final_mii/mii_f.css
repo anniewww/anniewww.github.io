@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+  }
+
+  
+  body {
+    background-color: #f0ecec;
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+  }
+  button {
+    font-family: 'Space Mono', monospace;
+    background-color: #4CAF50;
+    border-radius: 100%;
+    padding: 60px;
+    border: none;
+    color: #f0ecec;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+  }
+ #randoming {
+    position:absolute;
+    width:200px;
+    margin-left: 82%;
+    margin-top: 400px;
+    background-color: #73059b;
+    border-radius: 10px;
+    padding: 100px;
+    border: none;
+    color: #f0ecec;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Barrio', cursive;
+  }
+  #resetting {
+    position:absolute;
+    height:80px;
+    width:200px;
+    margin-left: 68%;
+    margin-top: 400px;
+    background-color: #73059b;
+    border-radius: 10px;
+    border: none;
+    color: #f0ecec;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Barrio', cursive;
+  }
+  #window{
+    background-color: white;
+    border-radius: 10px;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-family: 'Space Mono', monospace;
+  }
+  #buttonsA{
+    position: absolute;
+    border-radius: 20px;
+    margin-left:80%;
+    margin-top:-200px;
+    padding: 10px;
+    background-color: #fcbf49;
+  }
+
+  #border{
+    position: absolute;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    width:500px;
+    height:500px;
+    margin-left:28%;
+    margin-right:auto;
+    position:absolute;
+    margin-top: 0px;
+    display:block;
+  }
+  .header{
+    margin-left:8%;
+    margin-top:-10px;
+  }
+  .text0{
+    font-family: 'Barrio', cursive;
+    position:absolute;
+    background-color: white;
+    border: 5px solid rgb(212, 212, 212);
+    border-radius: 20px;
+    color:black;
+    width:200px;
+    margin-top: -10px;
+    padding:10px;
+    font-size: 40px;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .text1{
+    font-family: 'Space Mono', monospace;
+    position:absolute;
+    background-color: black;
+    border-radius: 20px;
+    color:white;
+    width:200px;
+    margin-top: 90px;
+    padding:20px;
+    font-size: 30px;
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 0%;
+      width: 20%;
+    }
+  
+    to {
+      margin-left: 7%;
+      width: 20%;
+    }
+  }
+  .images{
+    position: relative;
+    width:500px;
+    height:500px;
+    margin-left:0%;
+    margin-right:auto;
+    position:absolute;
+    margin-top: -10px;
+    display:block;
+  }
+  .row{
+      position: relative;
+      margin-top: -0px;;
+      margin-left: 65%;
+      width: 625px;
+  }
+  
+  /* The grid: Three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 16%;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .containerTab {
+      margin-left: 65%;
+      width: 500px;
+    padding: 10px;
+    color: white;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Closable button inside the container tab */
+  .closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+.wrapper {
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .grid-item {
+    background-image: url('images/face1.png');
+    background-color: white; 
+    box-shadow:8px 8px black;
+    background-size: 100% 100%;
+    width:100px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .buttonf1 {
+    background-image: url('images/face1.png'); 
+    background-size: 100% 100%;
+    width:200px;
+    height: 200px;
+    border: none;
+    color: gray;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    z-index: 0;
+  }
+  .buttonf1:hover {
+    background-color: #e17e66;
+    color: white;
+  }
